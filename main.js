@@ -1,4 +1,3 @@
-(function() {
     var stateKey = 'spotify_auth_state';
 
     /**
@@ -29,14 +28,6 @@
         }
         return text;
     };
-
-    var userProfileSource = document.getElementById('user-profile-template').innerHTML,
-        userProfileTemplate = Handlebars.compile(userProfileSource),
-        userProfilePlaceholder = document.getElementById('user-profile');
-
-        oauthSource = document.getElementById('oauth-template').innerHTML,
-        oauthTemplate = Handlebars.compile(oauthSource),
-        oauthPlaceholder = document.getElementById('oauth');
 
     var params = getHashParams();
 
@@ -89,5 +80,3 @@
             window.location = url;
         }, false);
     }
-
-})();
