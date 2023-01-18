@@ -52,7 +52,7 @@
                 if (err) {
                     console.error(err);
                 } else {
-                    $("pre#result_data").val(data);
+                    $("pre#result_data").text(data);
                 }
             });
             $('#login').hide();
